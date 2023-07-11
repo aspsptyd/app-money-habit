@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lbl_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id"/>
+
+        <TextView
+            android:id="@+id/lbl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"/>
+
+        <TextView
+            android:id="@+id/lbl_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"/>
+
+        <TextView
+            android:id="@+id/lbl_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"/>
+
+        <TextView
+            android:id="@+id/lbl_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Income"/>
+
+        <TextView
+            android:id="@+id/lbl_id_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id User"/>
+
+        <TextView
+            android:id="@+id/lbl_created_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Created at"/>
+
+        <View
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -8,9 +8,10 @@
     tools:context=".SplashActivity">
 
     <TextView
+        android:id="@+id/txWelcome"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hi, Welcome in Money Habit v1.0"/>
+        android:text="Loading..."/>
 
 </LinearLayout>
