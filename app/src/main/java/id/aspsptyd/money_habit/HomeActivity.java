@@ -25,8 +25,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 import id.aspsptyd.money_habit.adapter.AdapterListIncome;
+import id.aspsptyd.money_habit.network.BaseURL;
 
 public class HomeActivity extends AppCompatActivity {
+
+    BaseURL baseURL;
 
     RecyclerView rlistIncome;
     TextView tvTextMessage;
@@ -44,6 +47,8 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        baseURL = new BaseURL(HomeActivity.this);
+
         rlistIncome = (RecyclerView)findViewById(R.id.rvIncomeList);
         RecyclerView.LayoutManager layoutManagerProduct = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rlistIncome.setLayoutManager(layoutManagerProduct);
@@ -54,7 +59,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void getAllIncome() {
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.126.181:8000/api/income",
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, baseURL.apiListIncome(),
                 response -> {
                     try {
                         JSONObject obj = new JSONObject(response);
